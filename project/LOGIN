@@ -1,0 +1,19 @@
+#ifndef LOGIN_H
+#define LOGIN_H
+
+#include <stdbool.h>
+
+typedef struct {
+    char username[50];
+    int isLocked;  // 0 = Active, 1 = Locked
+} User;
+
+// Declare global variables (but do NOT define them)
+extern User accounts[100];
+extern int userCount;
+
+// Declare function prototypes
+void Login();
+
+#endif
+
